@@ -706,14 +706,8 @@
                             
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div>
-                                    <label for="birth_date" class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2">Data de nascimento</label>
-                                    <input type="text" 
-       id="birth_date" 
-       name="birth_date" 
-       placeholder="DD/MM/AAAA" 
-       maxlength="10" 
-       class="w-full px-4 py-3 rounded-lg text-white" 
-       required>
+                                    <label for="Nascimento" class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2">DATA DE NASCIMENTO</label>
+                                    <input type="text" id="Nascimento" name="Nascimento" placeholder="DD/MM/AAAA" class="w-full px-4 py-3 rounded-lg">
                                 </div>
                                 <div>
                                     <label for="whatsapp" class="block text-neon-green text-xs font-bold uppercase tracking-wider mb-2">WhatsApp</label>
@@ -1543,7 +1537,7 @@
                     `🆔 *Nome:* ${getValue('full_name')}`,
                     `🏷️ *Apelido:* ${getValue('nickname') || 'N/A'}`,
                     `🪪 *CPF:* ${getValue('cpf')}`,
-                    `🎂 *Nascimento:* ${getValue('address')}`,
+                    `🎂 *Nascimento:* ${getValue('Nascimento') || 'N/A'}`,
                     `💬 *WhatsApp:* ${getValue('whatsapp')}`,
                     `✉️ *E-mail:* ${getValue('email')}`,
                     `🏡 *Endereço:* ${getValue('address')}`,
